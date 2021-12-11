@@ -4,6 +4,12 @@
 
     background-color: #2f303a;
     color: var(--white);
+    .logo {
+        display: block;
+        margin-bottom: 20px;
+        color: var(--white);
+        margin-right: auto;
+    }
 }
 
 .footer-container {
@@ -14,13 +20,6 @@
 .footer-contacts {
     margin-right: 70px;
     width: 231px;
-}
-
-.footer .logo {
-    display: block;
-    margin-bottom: 20px;
-    color: var(--white);
-    margin-right: auto;
 }
 
 .footer-list__item:not(:last-child) {
@@ -61,20 +60,17 @@
 
 .footer__social-list {
     display: flex;
-}
-
-.footer__social-list .social-list__link {
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__social-list .social-list__link:hover,
-.footer__social-list .social-list__link:focus {
-    background-color: var(--accent);
-}
-
-.footer__social-list .social-list__icon {
-    fill: var(--white);
+    .social-list__link {
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: var(--accent);
+        }
+    }
+    .social-list__icon {
+        fill: var(--white);
+    }
 }
 
 .footer-social-links {
@@ -109,24 +105,22 @@
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-subscription__input:focus {
-    border-color: var(--white);
-    color: var(--white);
+    &:focus {
+        border-color: var(--white);
+        color: var(--white);
+    }
 }
 
 .form-subscription__btn-text {
     display: flex;
     justify-content: left;
     align-items: center;
-}
-
-.form-subscription__btn-text::after {
-    content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url(../images/icon-send.svg);
-    margin-left: 10px;
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icon-send.svg);
+        margin-left: 10px;
+    }
 }

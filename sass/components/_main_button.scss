@@ -18,8 +18,7 @@
     border-radius: 4px;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn:active {
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.7);
+    &:active {
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.7);
+    }
 }
