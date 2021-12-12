@@ -465,7 +465,7 @@ body {
   font-style: inherit;
 }
 
-.address-map {
+.address__map {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -473,8 +473,8 @@ body {
   color: var(--white);
 }
 
-.address-mail,
-.address-tel {
+.address__mail,
+.address__tel {
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
